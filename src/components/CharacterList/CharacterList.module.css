@@ -1,0 +1,7 @@
+.CharacterList {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    background-color: red;
+}
+
