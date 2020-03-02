@@ -1,4 +1,8 @@
-.character-card {
-    margin: 10px;
-    width: 18rem;
+.Character {
+	margin: 5px;
+	transition: all 0.5s;
+}
+
+.Character:hover {
+	transform: scale(1.02);
 }

@@ -1,3 +1,19 @@
-.container {
-    justify-content: center;
+.CharacterProfile {
+	margin-top: 20px;
+	width: 18rem;
+}
+
+.Container {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+.TextWrapper {
+	text-decoration: underline;
+	text-decoration-color: orange;
+	display: flex;
+	justify-content: space-between;
 }

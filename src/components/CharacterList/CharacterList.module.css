@@ -1,11 +1,12 @@
 .CharacterList {
-    min-height: 100vh;
-    min-width: 100vw;
-    overflow-x: hidden;
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
+	min-height: 100vh;
+	min-width: 100vw;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	padding: 10px;
+	background: black;
 }
