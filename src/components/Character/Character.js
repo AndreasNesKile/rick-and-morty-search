@@ -1,19 +1,24 @@
-// Write a function component 
+// Write a function component
 // Simply display a character in the form of a card: https://www.w3schools.com/howto/howto_css_cards.asp
 // Style the card however you like.
-import React from 'react'
+import React from "react";
+import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import styles from "./Character.module.css";
 
-
-class Character extends React.Component {
-    render(
-
-            <div class="card">
-  <img src="img_avatar.png" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>John Doe</b></h4>
-    <p>Architect & Engineer</p>
-  </div>
-</div>
- 
-    )
+function Character(character) {
+    return (
+        <Card key={character.id} className={styles.Character}>
+            <Card.Img src={character.image}></Card.Img>
+            <Card.Body>
+                <Card.Title>{character.name}</Card.Title>
+                <Card.Text>{character.status}</Card.Text>
+                <Link to={`/characters/profile/${character.id}`}>
+                    <Button className="primary"> More Info</Button>
+                </Link>
+            </Card.Body>
+        </Card>
+    );
 }
+
+export default Character;
