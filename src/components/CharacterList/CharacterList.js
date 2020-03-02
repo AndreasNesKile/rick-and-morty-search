@@ -42,7 +42,7 @@ class CharacterList extends React.Component {
 
         return (
             <div>
-                <h1>Rick &amp; Morty</h1>
+                <h1>Rick &amp; Morty </h1>
                 <div className={styles.CharacterList}>{characters}</div>
             </div>
         );
