@@ -7,25 +7,28 @@ import { Link } from "react-router-dom";
 import styles from "./Character.module.css";
 
 function Character(character) {
-	return (
-		<Card
-			key={character.id}
-			className={styles.Character}
-			bg="dark"
-			text="white"
-			rounded="true"
-		>
-			<Card.Img src={character.image} alt="TESTSET" />
+    return (
+        <Card
+            key={character.id}
+            className={styles.Character}
+            bg="dark"
+            text="white"
+            rounded="true"
+        >
+            <Card.Img src={character.image} />
 
-			<Card.Body>
-				<Card.Title>{character.name}</Card.Title>
-				<Card.Text>{character.status}</Card.Text>
-				<Link to={`/characters/profile/${character.id}`}>
-					<Button className="primary"> More Info</Button>
-				</Link>
-			</Card.Body>
-		</Card>
-	);
+            <Card.Body>
+                <Card.Title className="text-center">
+                    {character.name}
+                </Card.Title>
+                <Card.Text className="text-center">
+                    <Link to={`/characters/profile/${character.id}`}>
+                        <Button className="primary"> More Info</Button>
+                    </Link>
+                </Card.Text>
+            </Card.Body>
+        </Card>
+    );
 }
 
 export default Character;

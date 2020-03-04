@@ -1,19 +1,25 @@
 .CharacterProfile {
-	margin-top: 20px;
-	width: 18rem;
+    margin-top: 20px;
+    width: 25rem;
 }
 
 .Container {
-	display: flex;
-	justify-content: center;
-	background-color: black;
-	min-height: 100vh;
-	min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    min-height: 93.1vh;
+    min-width: 100vw;
+}
+
+.ProfileCard {
+    justify-content: center;
+    color: black;
+    display: flex;
 }
 
 .TextWrapper {
-	text-decoration: underline;
-	text-decoration-color: orange;
-	display: flex;
-	justify-content: space-between;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    display: flex;
+    justify-content: space-between;
 }

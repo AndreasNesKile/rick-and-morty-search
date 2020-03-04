@@ -1,8 +1,10 @@
 .Character {
-	margin: 5px;
-	transition: all 0.5s;
+    margin: 5px;
+    transition: all 0.5s;
+    display: flex;
+    height: 100%;
 }
 
 .Character:hover {
-	transform: scale(1.02);
+    transform: scale(1.02);
 }

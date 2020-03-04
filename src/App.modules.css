@@ -1,0 +1,9 @@
+.AppNavBar h1 {
+    text-decoration: none;
+    color: white !important;
+    justify-content: center !important;
+}
+
+.App {
+    min-height: 92.3vh;
+}
